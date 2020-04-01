@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Open Sans'
+}
+
+body {
+   background-image: url("Pictures/background.jpg");
+   background-size: auto;
+}
+
+#title {
+   color: #858585;
+   text-align: center;
+   font-weight: 600;
+   font-size: 40px;
+
+   padding-top: 70px;
+}
+
+.navbar ul {
+   position: fixed;
+   width: 100%;
+   background-color: rgba(0, 255, 42, 0.5);
+   padding: 5px;
+
+   transition: 0.4s ease 0s;
+}
+
+.navbar ul:hover {
+   padding: 20px;
+}
+
+.navbar ul a {
+   margin-left: 2rem;
+   margin-right: 2rem;
+   font-size: 16px;
+
+   cursor: pointer;
+   transition: 0.1s ease 0s;
+}
+
+.navbar ul a:hover {
+   border-bottom: 2.5px solid #028b52;
+}
+
+#menu-img {
+   right: 50px;
+   position: absolute;
+   margin: 0 auto;
+   width: 23px;
+}
