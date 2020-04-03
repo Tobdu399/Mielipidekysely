@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html>
-   <head>
-       <meta charset="utf-8">
-       <link rel="stylesheet" href="styles.css">
-       <script src="script.js"></script>
-       
-       <title>Survey - Puoluekysely</title>
-   </head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
 
-   <body>
+        <title>Suomi - Puoluekysely</title>
+    </head>
 
-        <div class="navbar">
-            <ul>
-                <a>KOTI</a>
-                <a>LEARNCODE</a>
-                <a>TIETOJA</a>
-
-                <img id="menu-img" src="Pictures/menu.png">
-            </ul>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+             </a>
         </div>
 
-        <div class="header>">
-            <h1 id="title">Puoluekysely</h1>
+        <div class="header">
+            <h1>Puoluekysely</h2>
+
+            <p>
+                Mukavaa kun päätit osallistua kyselyymme Suomen puolueista!
+                Kysymme sinulta kyselyssä, mitä puoluetta kannatat. Keräämme
+                mahdollisimman paljon vastauksia Suomalaisilta, ja laskemme
+                puoluevalintanne yhteen, ja tämän pohjalta julkaisemme
+                Helsingin Uutisiin artikkelin tästä asiasta. Vastaajat pysyväät
+                tietysti anonyymeinä, eikä kenenkään henkilöllisyyttä vuodateta.
+            </p>
+
+            <p class="kannatustaulukko">
+                Tässä taulukossa näkyy Suomen puolueiden tämänhetkinen kannattajamäärä.
+                Taulukon tulos perustuu tämän kevään kyselymme tuloksiin ja se on tehty
+                yhteistyössä Ylen kanssa:
+                <img src="Pictures/puolueidenkannatus.png">
+            </p>
+
+            <p>
+                Vastaathan kyselyymme rehellisesti, etkä jaa mitään
+                hnkilökohtaisia tietojasi, kuten sähköpostiasi tai salasanojasi
+            </p>
         </div>
 
-   </body>
+    </body>
 </html>
