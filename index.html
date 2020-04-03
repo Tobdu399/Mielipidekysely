@@ -28,7 +28,7 @@
                 Kysymme sinulta kyselyssä, mitä puoluetta kannatat. Keräämme
                 mahdollisimman paljon vastauksia Suomalaisilta, ja laskemme
                 puoluevalintanne yhteen, ja tämän pohjalta julkaisemme
-                Helsingin Uutisiin artikkelin tästä asiasta. Vastaajat pysyväät
+                Helsingin Sanomiin artikkelin tästä asiasta. Vastaajat pysyväät
                 tietysti anonyymeinä, eikä kenenkään henkilöllisyyttä vuodateta.
             </p>
 
@@ -38,11 +38,34 @@
                 yhteistyössä Ylen kanssa:
                 <img src="Pictures/puolueidenkannatus.png">
             </p>
+        </div>
 
+        <div class="survey">
+            <h2>Kysely</h2>
             <p>
-                Vastaathan kyselyymme rehellisesti, etkä jaa mitään
-                hnkilökohtaisia tietojasi, kuten sähköpostiasi tai salasanojasi
+                Vastaathan kyselyymme rehellisesti, etkä jaa mitään henkilökohtaisia
+                tietojasi, kuten sähköpostiasi tai salasanojasi!
+                Valitse alta puolue, jota kannatat ja muista jättää myös nimesi.
+                Me emme jaa nimeäsi tai vastaustasi kenenkään kanssa!
             </p>
+
+            <div class="options">
+                <button onclick='choise("Perussuomalaiset")'>Perussuomalaiset</button>
+                <button onclick='choise("Kokoomus")'>Kokoomus</button>
+                <button onclick='choise("SDP")'>SDP</button>
+                <button onclick='choise("Vihreät")'>Vihreät</button>
+                <button onclick='choise("Keskusta")'>Keskusta</button>
+                <button onclick='choise("Vasemmisto")'>Vasemmisto</button>
+                <button onclick='choise("RKP")'>RKP</button>
+                <button onclick='choise("Kristillisdemokraatit")'>Kristillisdemokraatit</button>
+                <button onclick='choise("Liike Nyt")'>Liike Nyt</button>
+            </div>
+
+            <form class="result-submit" action="https://formspree.io/mvobgalp" method="POST">
+                <input name="Puolue" type="text" id="valittu-puolue" placeholder="Valitsemasi puolue" required="required"></input>
+                <input name="Nimi" type="text" placeholder="Oma nimesi" required="required"><br>
+                <button type="submit">Lähetä</button>
+            </form>
         </div>
 
     </body>

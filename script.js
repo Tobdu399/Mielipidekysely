@@ -7,3 +7,9 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+function choise(decision) {
+    var display = document.getElementById("valittu-puolue");
+
+    display.value = decision;
+}
