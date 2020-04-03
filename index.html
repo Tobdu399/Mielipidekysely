@@ -6,15 +6,17 @@
         <link rel="stylesheet" href="styles.css">
         <script src="script.js"></script>
 
+        <link rel="icon" href="Pictures/icon.png">
+
         <title>Suomi - Puoluekysely</title>
     </head>
 
     <body>
         <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <a href="#home" class="active">Koti</a>
+            <a href="#contact">Ota Yhteyttä</a>
+            <a href="#about">Tietoja</a>
+            <a href="https://learncode.tobdu399.repl.co/">Learncode</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
              </a>
@@ -62,10 +64,18 @@
             </div>
 
             <form class="result-submit" action="https://formspree.io/mvobgalp" method="POST">
-                <input name="Puolue" type="text" id="valittu-puolue" placeholder="Valitsemasi puolue" required="required"></input>
-                <input name="Nimi" type="text" placeholder="Oma nimesi" required="required"><br>
+                <input name="Puolue" type="text" id="valittu-puolue" placeholder="Valitsemasi puolue" required="required" autocomplete="off"></input>
+                <input name="Nimi" type="text" placeholder="Oma nimesi" required="required" autocomplete="off"><br>
                 <button type="submit">Lähetä</button>
             </form>
+        </div>
+
+        <div class="footer">
+            <p>
+                Ota yhteyttä: pouluekysely.help@gmail.com<br>
+                Sponsored By: Yle © Puoluekysely 2015 - 2020
+            </p>
+
         </div>
 
     </body>
